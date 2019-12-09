@@ -1,0 +1,27 @@
+{
+  "name": "front-end-basics",
+  "version": "1.0.0",
+  "description": "Teste para alinhamento do nível técnico da equipe de Frontend",
+  "main": "index.js",
+  "scripts": {
+    "test": "jest"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/renanreboredo/front-end-basics.git"
+  },
+  "keywords": [
+    "js",
+    "wiz",
+    "html",
+    "css",
+    "frontend",
+    "basics"
+  ],
+  "author": "Renan Reboredo",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/renanreboredo/front-end-basics/issues"
+  },
+  "homepage": "https://github.com/renanreboredo/front-end-basics#readme"
+}
