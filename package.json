@@ -23,5 +23,8 @@
   "bugs": {
     "url": "https://github.com/renanreboredo/front-end-basics/issues"
   },
-  "homepage": "https://github.com/renanreboredo/front-end-basics#readme"
+  "homepage": "https://github.com/renanreboredo/front-end-basics#readme",
+  "devDependencies": {
+    "jest": "^24.9.0"
+  }
 }
