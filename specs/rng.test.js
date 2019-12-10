@@ -1,24 +1,24 @@
-const index = require('../index');
+const index = require('../rng');
 
-describe('checkNumbersRange', () => {
+describe('checkNumbersInRange', () => {
     it('returns true if number is in range', () => {
-        expect(index.checkNumbersRange(49)).toEqual(true);
+        expect(index.checkNumbersInRange(49)).toEqual(true);
     });
 
     it('returns true if number is at min range', () => {
-        expect(index.checkNumbersRange(10)).toEqual(true);
+        expect(index.checkNumbersInRange(10)).toEqual(true);
     });
 
     it('returns true if number is at max range', () => {
-        expect(index.checkNumbersRange(100)).toEqual(true);
+        expect(index.checkNumbersInRange(100)).toEqual(true);
     });
 
     it('returns false if number is out of min range', () => {
-        expect(index.checkNumbersRange(9)).toEqual(false);
+        expect(index.checkNumbersInRange(9)).toEqual(false);
     });
 
     it('returns false if number is out of max range', () => {
-        expect(index.checkNumbersRange(101)).toEqual(false);
+        expect(index.checkNumbersInRange(101)).toEqual(false);
     });
 });
 
