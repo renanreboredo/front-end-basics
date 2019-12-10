@@ -17,8 +17,10 @@ const buildListNumbers = (selector, elements) => {
     let textNode;
 
     elements.forEach(el => {
-        node = document.createElement('SPAN');
-        textNode = document.createTextNode(String(el + '  '));
+        node = document.createElement('DIV');
+        node.classList.add('pr-4');
+        node.classList.add('text-gray-600');
+        textNode = document.createTextNode(String(el));
         node.appendChild(textNode);
         container.appendChild(node);
     });
@@ -32,6 +34,7 @@ document.querySelector('button').addEventListener('click', (e) => {
         if (errors == true) {
             const validation = document.getElementById('validation');
             validation.classList.add('hidden');
+            errors = false;
         }
 
         rngNumbers = genRandomNumbers(num);
@@ -51,6 +54,6 @@ document.querySelector('button').addEventListener('click', (e) => {
     } else {
         const validation = document.getElementById('validation');
         validation.classList.remove('hidden');
-        errors = false;
+        errors = true;
     }
 });

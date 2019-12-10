@@ -2,6 +2,19 @@
     font-family: 'Roboto', sans-serif;
 }
 
+.container {
+    width: 1024px;
+    max-width: 1024px;
+}
+
+.rounded-lg {
+    border-radius: 0.5rem;
+}
+
+.flex-wrap {
+    flex-wrap: wrap
+}
+
 .flex {
     display: flex
 }
@@ -34,14 +47,94 @@
     align-items: start
 }
 
+.self-center {
+    align-self: center
+}
+
 .w-full {
     width: 100%
+}
+
+.w-32 {
+    width: 8rem
 }
 
 .h-full {
     height: 100%
 }
 
+.h-8 {
+    height: 2rem
+}
+
 .hidden {
     visibility: hidden
+}
+
+.pt-8 {
+    padding-top: 2rem 
+}
+
+.pb-8 {
+    padding-bottom: 2rem 
+}
+
+.border-none {
+    border: none
+}
+
+.shadow-lg {
+    box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1), 0 4px 6px -2px rgba(0, 0, 0, 0.05);
+}
+
+.pl-8 {
+    padding-left: 2rem 
+}
+
+.pr-8 {
+    padding-right: 2rem 
+}
+
+.pt-4 {
+    padding-top: 1rem 
+}
+
+.pb-4 {
+    padding-bottom: 1rem 
+}
+
+.pl-4 {
+    padding-left: 1rem 
+}
+
+.pr-4 {
+    padding-right: 1rem 
+}
+
+.bg-gray-200 {
+    background-color: #edf2f7
+}
+
+.bg-red-400 {
+    background-color: #fc8181;
+}
+
+.text-gray-500 {
+    background-color: #718096;
+}
+
+.font-bold {
+    font-weight: bold;
+}
+
+.text-red-400 {
+    color: #fc8181;
+}
+
+.text-red-600 {
+    color: #e53e3e;
+}
+
+.text-white {
+    color: white
 }

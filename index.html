@@ -8,42 +8,44 @@
         <title> Números Aleatórios </title>
     </head>
 
-    <body>
+    <body class="bg-gray-200">
         <div class="flex flex-col justify-center items-center">
-            <h1>RNGesus</h1>
-        
-            <form class="inline-flex flex-col justify-center items-start">
-                <span>
-                    <label for="numbers"> Quantos números deseja? </label>
-                    <input type="text" name="numbers">
-                    <h3 class="hidden" id="validation"> Somente números de 10 a 100 são permitidos </h3>
-                </span>
-                <button type="button"> Gerar </button>
-            </form>
-    
-            <div>
-                <h2> Números aleatórios </h2>
-                <div id="randomNumbers"> </div>
-            </div>
-    
-            <div>
-                <h2> Ordenados de forma crescente </h2>
-                <div id="ascNumbers"> </div>
-            </div>
-    
-            <div>
-                <h2> Ordenados de forma decrescente </h2>
-                <div id="descNumbers"> </div>
-            </div>
-    
-            <div>
-                <h2> Ímpares crescentes </h2>
-                <div id="oddAscNumbers"> </div>
-            </div>
+            <div class="container inline-flex flex-col justify-center items-center pb-4 pt-4">
+                <h1 class="text-red-400 font-bold">RNGesus</h1>
             
-            <div>
-                <h2> Pares decrescentes </h2>
-                <div id="evenDescNumbers"> </div>
+                <form class="inline-flex flex-col justify-center items-start">
+                    <span>
+                        <label for="numbers"> Quantos números deseja? </label>
+                        <input type="text" name="numbers">
+                        <h3 class="text-red-600 hidden" id="validation"> Somente números de 10 a 100 são permitidos! </h3>
+                    </span>
+                    <button class="self-center rounded-lg w-32 h-8 bg-red-400 text-white border-none shadow-lg" type="button"> Gerar </button>
+                </form>
+        
+                <div class="w-full inline-flex flex-col justify-start items-center pb-4 pt-4">
+                    <h2 class="text-red-400"> Números aleatórios </h2>
+                    <div id="randomNumbers" class="inline-flex flex-row flex-wrap pt-4"> </div>
+                </div>
+        
+                <div class="w-full inline-flex flex-col justify-start items-center pb-4 pt-4">
+                    <h2 class="text-red-400"> Ordenados de forma crescente </h2>
+                    <div id="ascNumbers" class="inline-flex flex-row flex-wrap pt-4"> </div>
+                </div>
+        
+                <div class="w-full inline-flex flex-col justify-start items-center pb-4 pt-4">
+                    <h2 class="text-red-400"> Ordenados de forma decrescente </h2>
+                    <div id="descNumbers" class="inline-flex flex-row flex-wrap pt-4"> </div>
+                </div>
+        
+                <div class="w-full inline-flex flex-col justify-start items-center pb-4 pt-4">
+                    <h2 class="text-red-400"> Ímpares crescentes </h2>
+                    <div id="oddAscNumbers" class="inline-flex flex-row flex-wrap pt-4"> </div>
+                </div>
+                
+                <div class="w-full inline-flex flex-col justify-start items-center pb-4 pt-4">
+                    <h2 class="text-red-400"> Pares decrescentes </h2>
+                    <div id="evenDescNumbers" class="inline-flex flex-row flex-wrap pt-4"> </div>
+                </div>
             </div>
         </div>
         <script src="./rng.js"></script>
