@@ -1,40 +1,46 @@
-<html lang="pt-br">
+<html lang="pt">
     <head>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <meta http-equiv="X-UA-Compatible" content="ie=edge">
-        <title> Números aleatórios </title>
-        <script src="index.js"></script>
+        <link href="https://fonts.googleapis.com/css?family=Roboto&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="styles.css">
+        <title> Números Aleatórios </title>
     </head>
 
     <body>
-        <h1>Título a critério do desenvolvedor</h1>
+        <div class="flex flex-col justify-center items-center">
+            <h1>RNGesus</h1>
         
-        <form action="submit($event)">
-            <label for="numbers">Quantos números deseja?</label>
-            <input type="text" name="numbers">
-            <button>Gerar</button>
-        </form>
-
-        <div>
-            <h2>Números aleatórios</h2>
+            <form id="randomNumbers" class="inline-flex flex-col justify-center items-start">
+                <span>
+                    <label for="numbers"> Quantos números deseja? </label>
+                    <input type="text" name="numbers">
+                    <h3 class="hidden" id="validation">Somente números de 10 a 100</h3>
+                </span>
+                <button> Gerar </button>
+            </form>
+    
+            <div>
+                <h2>Números aleatórios</h2>
+            </div>
+    
+            <div>
+                <h2>Ordenados de forma crescente</h2>
+            </div>
+    
+            <div>
+                <h2>Ordenados de forma decrescente</h2>
+            </div>
+    
+            <div>
+                <h2>Ímpares crescentes</h2>
+            </div>
+            
+            <div>
+                <h2>Pares decrescentes</h2>
+            </div>
         </div>
-
-        <div>
-            <h2>Ordenados de forma crescente</h2>
-        </div>
-
-        <div>
-            <h2>Ordenados de forma decrescente</h2>
-        </div>
-
-        <div>
-            <h2>Ímpares crescentes</h2>
-        </div>
-        
-        <div>
-            <h2>Pares decrescentes</h2>
-        </div>
-
+        <script src="./index.js"></script>
     </body>
 </html>

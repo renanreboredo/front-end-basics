@@ -1,0 +1,47 @@
+* {
+    font-family: 'Roboto', sans-serif;
+}
+
+.flex {
+    display: flex
+}
+
+.inline-flex {
+    display: inline-flex
+}
+
+.flex-col {
+    flex-direction: column
+}
+
+.flex-row {
+    flex-direction: row
+}
+
+.justify-center {
+    justify-content: center
+}
+
+.justify-start {
+    justify-content: start
+}
+
+.items-center {
+    align-items: center
+}
+
+.items-start {
+    align-items: start
+}
+
+.w-full {
+    width: 100%
+}
+
+.h-full {
+    height: 100%
+}
+
+.hidden {
+    visibility: hidden
+}
