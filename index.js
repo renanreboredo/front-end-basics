@@ -6,9 +6,6 @@ let evenDescRngNumbers;
 
 let errors = false;
 
-const ascOrder = (numArr) => numArr.sort((a, b) => a - b);
-const descOrder = (numArr) => numArr.sort((a, b) => b - a);
-
 const buildListNumbers = (selector, elements) => {
     const container = document.getElementById(selector);
     let lastChild = container.lastElementChild;

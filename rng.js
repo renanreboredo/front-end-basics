@@ -11,12 +11,14 @@ const genRandomNumbers = (numbers, numArr = [], i = 0) => {
 
 const evenNumbers = (numArr) => numArr.filter( num => (num % 2) == 0 );
 const oddNumbers = (numArr) => numArr.filter( num => (num % 2) != 0 );
+const ascOrder = (numArr) => numArr.sort((a, b) => a - b);
+const descOrder = (numArr) => numArr.sort((a, b) => b - a);
 
-// module.exports = {
-//     checkNumbersInRange,
-//     genRandomNumbers,
-//     ascOrder,
-//     descOrder,
-//     evenNumbers,
-//     oddNumbers
-// }
+module.exports = {
+    checkNumbersInRange,
+    genRandomNumbers,
+    ascOrder,
+    descOrder,
+    evenNumbers,
+    oddNumbers
+}
