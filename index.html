@@ -12,35 +12,41 @@
         <div class="flex flex-col justify-center items-center">
             <h1>RNGesus</h1>
         
-            <form id="randomNumbers" class="inline-flex flex-col justify-center items-start">
+            <form class="inline-flex flex-col justify-center items-start">
                 <span>
                     <label for="numbers"> Quantos números deseja? </label>
                     <input type="text" name="numbers">
-                    <h3 class="hidden" id="validation">Somente números de 10 a 100</h3>
+                    <h3 class="hidden" id="validation"> Somente números de 10 a 100 são permitidos </h3>
                 </span>
-                <button> Gerar </button>
+                <button type="button"> Gerar </button>
             </form>
     
             <div>
-                <h2>Números aleatórios</h2>
+                <h2> Números aleatórios </h2>
+                <div id="randomNumbers"> </div>
             </div>
     
             <div>
-                <h2>Ordenados de forma crescente</h2>
+                <h2> Ordenados de forma crescente </h2>
+                <div id="ascNumbers"> </div>
             </div>
     
             <div>
-                <h2>Ordenados de forma decrescente</h2>
+                <h2> Ordenados de forma decrescente </h2>
+                <div id="descNumbers"> </div>
             </div>
     
             <div>
-                <h2>Ímpares crescentes</h2>
+                <h2> Ímpares crescentes </h2>
+                <div id="oddAscNumbers"> </div>
             </div>
             
             <div>
-                <h2>Pares decrescentes</h2>
+                <h2> Pares decrescentes </h2>
+                <div id="evenDescNumbers"> </div>
             </div>
         </div>
+        <script src="./rng.js"></script>
         <script src="./index.js"></script>
     </body>
 </html>
